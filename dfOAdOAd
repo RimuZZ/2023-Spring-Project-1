@@ -1,0 +1,72 @@
+[33mcommit e05e63b5013501cafc3b0647c643a4a1ba73010e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mupstream/main[m[33m)[m
+Author: KyungHoon Kim <92k@kakao.com>
+Date:   Wed Mar 22 16:42:31 2023 +0900
+
+    3rd modify
+
+[33mcommit 56ed722e7a953cb14ae824d69ac17ec7dbd93846[m
+Author: KyungHoon Kim <92k@kakao.com>
+Date:   Wed Mar 22 11:31:19 2023 +0900
+
+    modify-2
+
+[33mcommit 03f527fb4ef1d07c1911524b35e868cee410faa6[m
+Merge: 8dca0b7 699fbbc
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Wed Mar 22 11:16:07 2023 +0900
+
+    Merge pull request #1 from RimuZZ/main
+    
+    seller page modify
+
+[33mcommit 8dca0b7fb3f4beabd7cb896696ebd8cf5b127f29[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Wed Mar 22 11:15:53 2023 +0900
+
+    Delete text
+
+[33mcommit 654bcec12c4cc87206f5881822b699e439fefb05[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Wed Mar 22 11:15:28 2023 +0900
+
+    Add files via upload
+
+[33mcommit 51ea0e90978b16069c9c4cefbcf61f3bb0b4489c[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Wed Mar 22 11:15:10 2023 +0900
+
+    Create text
+    
+    c
+
+[33mcommit 699fbbcf7189a44e3c8640b149fdcc62baf9e9c0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Yurim Lee <sntmonyr0258@naver.com>
+Date:   Wed Mar 22 09:58:46 2023 +0900
+
+    seller page modify
+
+[33mcommit f111c70e03c4dd3c5f0111e6388872461f29cfaf[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Tue Mar 21 17:14:32 2023 +0900
+
+    Delete text
+
+[33mcommit 5f962ab2946f4a7896a2af86d0e1f08ea4697a1e[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Tue Mar 21 17:14:04 2023 +0900
+
+    Add files via upload
+
+[33mcommit d8194ce95fa9b607a1ec6ccb5437ee2ed6f955d8[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Tue Mar 21 17:13:40 2023 +0900
+
+    Create text
+    
+    create new folder
+
+[33mcommit e023b44d7acd6718ca7889f8d27c07b93e0adda1[m
+Author: chartkey <128360104+chartkey@users.noreply.github.com>
+Date:   Tue Mar 21 17:08:25 2023 +0900
+
+    Initial commit
