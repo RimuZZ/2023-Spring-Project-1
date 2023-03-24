@@ -47,7 +47,7 @@
 				$.each(c6, function(i, item) {
 					$('#category2').append('<option class="op">'+item+'</option>');
 				});
-			}else if(sel == '베이비&키즈'){
+			}else if(sel == '베이비/키즈'){
 				$('.op').remove();
 				$.each(c7, function(i, item) {
 					$('#category2').append('<option class="op">'+item+'</option>');
@@ -62,34 +62,21 @@
 				$('.op').remove();
 			}
 		});
-		var tcnt = 1;
+		var tcnt = 2;
 		$("#thumb_file").click(function() {
 			if(tcnt<=3){
-				if(tcnt==1){
-					$("#t_file").append("<br>"+"썸네일이미지 : <input  type='file' name='file"+tcnt+"' id='file"+tcnt+"'/>");
-					
-				}else{
-					$("#t_file").append("<br>"+"<input  type='file' name='file"+tcnt+"' id='file"+tcnt+"' />");
-				}
-				$("#t_file").append("<div class='select_timg'><img src='' /></div>");
-				cnt++;
+				$("#t_file").append("<br>"+"<input  type='file' name='tfile"+tcnt+"' id='tfile"+tcnt+"' />");
+				tcnt++;
 			}
+			
 		});
 		
-		$("'#file'+tcnt").change(function(){
-	  		if(this.files && this.files[0]) {
-		    	var reader = new FileReader;
-		    	reader.onload = function(data) {
-		     		$(".select_timg img").attr("src", data.target.result).width(40);        
-		    	}
-		    	reader.readAsDataURL(this.files[0]);
-	   		}
-		});
+		
 		var dcnt = 1;
 		$("#detail_file").click(function() {
 			if(dcnt<=10){
-				$("#d_file").append("<br>"+"<input  type='file' name='file"+dcnt+"' />");
-				cnt++;
+				$("#d_file").append("<br>"+"<input  type='file' name='dfile"+dcnt+"' />");
+				dcnt++;
 			}
 		});
 	});
@@ -108,7 +95,7 @@
 		<option value="남성">남성</option>
 		<option value="체중관리">체중관리</option>
 		<option value="이너뷰티">이너뷰티</option>
-		<option value="베이비&키즈">베이비&키즈</option>
+		<option value="베이비/키즈">베이비/키즈</option>
 		<option value="기타">기타</option>
 	</select>
 	>
@@ -131,23 +118,25 @@
 </div>
 <div class="inputarea" style="border: 1px solid gold">	
 	대표사진(최대3장)(1000px * 1000px 권장)<br>
+	<div class='select_timg'>썸네일이미지<br><img src='' />
+	<br>
+	<span align="center"><input  type='file' name='tfile1' id='tfile1'></span>
+	</div>
 	<input type="button" value="사진추가" id="thumb_file">
 	<div id="t_file" align="center">
 	<!-- 스크립트에서 사진 여러개 받아오기위한 부분 -->
+	
 	</div>
-	<input type="file" id="gdsImg" name="file" />
-	<div class="select_timg"><img src="" /></div>
- 
- 	<script type="text/javascript">
-  	$("#gdsImg").change(function(){
-  		if(this.files && this.files[0]) {
-	    	var reader = new FileReader;
-	    	reader.onload = function(data) {
-	     		$(".select_timg img").attr("src", data.target.result).width(40);        
-	    	}
-	    	reader.readAsDataURL(this.files[0]);
-   		}
-	});
+	<script type="text/javascript">
+		$("#tfile1").change(function(){
+	  		if(this.files && this.files[0]) {
+		    	var reader = new FileReader;
+		    	reader.onload = function(data) {
+		     		$(".select_timg img").attr("src", data.target.result).width(70);        
+		    	}
+		    	reader.readAsDataURL(this.files[0]);
+	   		}
+		});
 	</script>
 </div>
 <div class="inputarea" style="border: 1px solid red">	

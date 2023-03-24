@@ -14,7 +14,10 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-
+	<!-- 유림product 수정 -->
+	<resources mapping="/thumb_img/**" location="/thumb_img/" />
+	<resources mapping="/detail_img/**" location="/detail_img/" />
+	<!-- 유림product 수정 -->
 		<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
 		<beans:property name="definitions">
 			<beans:list>

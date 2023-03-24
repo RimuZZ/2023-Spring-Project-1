@@ -14,9 +14,10 @@
 		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
 	</definition>  
 	
-	<!-- product -->
+	<!-- 유림 product -->
 	<definition name="productinputform" extends="baseLayout">
 		<put-attribute name="title" value="상품등록"/>
 		<put-attribute name="body" value="/WEB-INF/views/product/productinputform.jsp"/>
 	</definition>
+	<!-- 유림 product -->
 </tiles-definitions>
