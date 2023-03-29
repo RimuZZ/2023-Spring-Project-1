@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vitalchoice.web.productout.Service_productout">
+	<select id="productout" resultType="com.vitalchoice.web.product.ProductDTO">
+		select * from product where product_num = #{param1}
+	</select>
+	<select id="categoryout" resultType="com.vitalchoice.web.product.CategoryDTO">
+		select * from product_category where category_num = #{param1}
+	</select>
+	<select id="thumbout" resultType="com.vitalchoice.web.product.ImageDTO">
+		select * from product_thumb_imagefile where product_num = #{param1}
+	</select>
+	<select id="detailout" resultType="com.vitalchoice.web.product.ImageDTO">
+		select * from product_detail_imagefile where product_num = #{param1}
+	</select>
+	<select id="storenameout" resultType="String">
+		select store_sname from store 
+		where store_snum = (select store_snum from product where product_num = #{param1})
+	</select>
+</mapper>

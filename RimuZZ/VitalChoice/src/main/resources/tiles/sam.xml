@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="top" value="/WEB-INF/views/top.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+	</definition>	   
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+	</definition>  
+	
+	<!-- 유림 product -->
+	<definition name="productinputform" extends="baseLayout">
+		<put-attribute name="title" value="상품등록"/>
+		<put-attribute name="body" value="/WEB-INF/views/product/productinputform.jsp"/>
+	</definition>
+	<!-- 유림 productout -->
+	<definition name="productout" extends="baseLayout">
+		<put-attribute name="title" value="상품상세"/>
+		<put-attribute name="body" value="/WEB-INF/views/productout/productout.jsp"/>
+	</definition>
+	<!-- 유림 productreview -->
+	<definition name="reviewinputform" extends="baseLayout">
+		<put-attribute name="title" value="리뷰작성"/>
+		<put-attribute name="body" value="/WEB-INF/views/product_review/reviewinputform.jsp"/>
+	</definition>
+</tiles-definitions>

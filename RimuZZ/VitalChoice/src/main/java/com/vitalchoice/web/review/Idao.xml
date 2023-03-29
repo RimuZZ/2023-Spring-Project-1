@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vitalchoice.web.review.Service_review">
+	<!-- 회원가입 정보 저장 -->
+	<select id="prdout" resultType="com.vitalchoice.web.review.PrdshowDTO">
+		select pd.product_name, st.store_sname, img.stored_file_name 
+		from product pd, store st, product_thumb_imagefile img 
+		where pd.store_snum = st.store_snum 
+		and pd.product_num = img.product_num 
+		and pd.product_num=(select product_num from product where product_num=#{param1}) 
+		and img.file_number=1
+	</select>
+</mapper>
